@@ -110,6 +110,9 @@ export const COLOR_TOKENS: ColorToken[] = [
   { name: "Primary Foreground", variable: "primary-foreground", group: "Brand" },
   { name: "Secondary", variable: "secondary", group: "Brand" },
   { name: "Secondary Foreground", variable: "secondary-foreground", group: "Brand" },
+  { name: "Highlight Lime", variable: "highlight-lime", group: "Brand" },
+  { name: "Highlight Red", variable: "highlight-red", group: "Brand" },
+  { name: "Highlight Purple", variable: "highlight-purple", group: "Brand" },
 
   // State
   { name: "Destructive", variable: "destructive", group: "State" },
@@ -122,11 +125,6 @@ export const COLOR_TOKENS: ColorToken[] = [
   { name: "Border", variable: "border", group: "Borders & Input" },
   { name: "Input", variable: "input", group: "Borders & Input" },
   { name: "Ring", variable: "ring", group: "Borders & Input" },
-
-  // Highlights
-  { name: "Highlight Lime", variable: "highlight-lime", group: "Highlights" },
-  { name: "Highlight Red", variable: "highlight-red", group: "Highlights" },
-  { name: "Highlight Purple", variable: "highlight-purple", group: "Highlights" },
 
   // Charts
   { name: "Chart 1", variable: "chart-1", group: "Charts" },
