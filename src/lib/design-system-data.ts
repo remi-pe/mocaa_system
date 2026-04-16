@@ -30,6 +30,7 @@ export const SECTIONS: SectionItem[] = [
   { id: "button", label: "Button", category: "Actions" },
   { id: "toggle", label: "Toggle", category: "Actions" },
   { id: "toggle-group", label: "Toggle Group", category: "Actions" },
+  { id: "theme-switch", label: "Theme Switch", category: "Actions" },
 
   // Forms
   { id: "input", label: "Input", category: "Forms" },

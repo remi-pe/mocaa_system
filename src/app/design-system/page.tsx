@@ -14,6 +14,7 @@ import { IconsSection } from "@/components/design-system/foundations/icons-secti
 import { ButtonSection } from "@/components/design-system/actions/button-section";
 import { ToggleSection } from "@/components/design-system/actions/toggle-section";
 import { ToggleGroupSection } from "@/components/design-system/actions/toggle-group-section";
+import { ThemeSwitchSection } from "@/components/design-system/actions/theme-switch-section";
 
 // Forms
 import { InputSection } from "@/components/design-system/forms/input-section";
@@ -112,6 +113,7 @@ export default function DesignSystemPage() {
             <ButtonSection />
             <ToggleSection />
             <ToggleGroupSection />
+            <ThemeSwitchSection />
 
             {/* Forms */}
             <InputSection />
