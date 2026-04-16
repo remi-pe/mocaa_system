@@ -25,14 +25,14 @@ export function MobileNav() {
         </SheetTrigger>
         <SheetContent side="left" className="w-72 overflow-y-auto">
           <SheetHeader>
-            <SheetTitle>Shadcnfast</SheetTitle>
+            <SheetTitle>mocaa_ui_system</SheetTitle>
           </SheetHeader>
           <div className="mt-4" onClick={() => setOpen(false)}>
             <SidebarNav />
           </div>
         </SheetContent>
       </Sheet>
-      <h1 className="flex-1 text-lg font-semibold">Shadcnfast</h1>
+      <h1 className="flex-1 text-lg font-semibold">mocaa_ui_system</h1>
       <ThemeToggle />
     </div>
   );
