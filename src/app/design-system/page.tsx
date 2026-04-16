@@ -79,7 +79,7 @@ export default function DesignSystemPage() {
         {/* Desktop Sidebar */}
         <aside className="hidden lg:block w-64 shrink-0 border-r">
           <div className="sticky top-0 h-screen overflow-y-auto p-6">
-            <h1 className="mb-4 text-xl font-bold">Design System</h1>
+            <h1 className="mb-4 text-xl font-bold">Shadcnfast</h1>
             <div className="mb-6">
               <ThemeToggle />
             </div>
@@ -92,7 +92,7 @@ export default function DesignSystemPage() {
           <div className="mx-auto max-w-4xl">
             <div className="mb-8">
               <h1 className="hidden text-4xl font-extrabold tracking-tight lg:block">
-                Design System
+                Shadcnfast
               </h1>
               <p className="mt-2 text-lg text-muted-foreground">
                 A comprehensive design system built on shadcn/ui. Browse

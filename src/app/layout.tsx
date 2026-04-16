@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Design System",
+  title: "Shadcnfast",
   description: "A comprehensive design system built on shadcn/ui",
 };
 
