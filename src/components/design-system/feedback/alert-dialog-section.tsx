@@ -1,0 +1,45 @@
+"use client";
+
+import { SectionWrapper } from "@/components/design-system/section-wrapper";
+import { ComponentPreview } from "@/components/design-system/component-preview";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+
+export function AlertDialogSection() {
+  return (
+    <SectionWrapper
+      id="alert-dialog"
+      title="Alert Dialog"
+      description="A modal dialog that interrupts the user with important content and expects a response."
+    >
+      <ComponentPreview title="Confirmation Dialog">
+        <AlertDialog>
+          <AlertDialogTrigger render={<Button variant="outline" />}>Delete Account</AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+              <AlertDialogDescription>
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our servers.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction>Continue</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      </ComponentPreview>
+    </SectionWrapper>
+  );
+}
