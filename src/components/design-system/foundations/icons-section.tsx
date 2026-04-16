@@ -105,7 +105,7 @@ const ICONS: { name: string; component: LucideIcon }[] = [
 ];
 
 const SIZES = [
-  { label: "16px", className: "h-4 w-4" },
+  { label: "20px", className: "h-5 w-5" },
   { label: "24px", className: "h-6 w-6" },
 ] as const;
 
