@@ -1,11 +1,7 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+import { useState } from "react";
+import { ChevronRight } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -27,14 +23,23 @@ interface PropsTableProps {
 }
 
 export function PropsTable({ props }: PropsTableProps) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Collapsible className="mt-4">
-      <CollapsibleTrigger className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors [&>svg]:transition-transform [&>svg]:duration-200 [&>svg]:-rotate-90 [&[data-open]>svg]:rotate-0">
-        <ChevronDown className="h-4 w-4" />
+    <div className="mt-4">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <ChevronRight
+          className={`h-4 w-4 transition-transform duration-200 ${open ? "rotate-90" : ""}`}
+        />
         Props
-        <span className="text-xs text-muted-foreground/60">({props.length})</span>
-      </CollapsibleTrigger>
-      <CollapsibleContent>
+        <span className="text-xs text-muted-foreground/60">
+          ({props.length})
+        </span>
+      </button>
+      {open && (
         <div className="mt-2 overflow-hidden rounded-lg border">
           <Table>
             <TableHeader>
@@ -63,7 +68,7 @@ export function PropsTable({ props }: PropsTableProps) {
             </TableBody>
           </Table>
         </div>
-      </CollapsibleContent>
-    </Collapsible>
+      )}
+    </div>
   );
 }
