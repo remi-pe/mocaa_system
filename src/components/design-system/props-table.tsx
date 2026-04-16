@@ -29,8 +29,8 @@ interface PropsTableProps {
 export function PropsTable({ props }: PropsTableProps) {
   return (
     <Collapsible className="mt-4">
-      <CollapsibleTrigger className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors group">
-        <ChevronDown className="h-4 w-4 transition-transform -rotate-90 group-data-open:rotate-0" />
+      <CollapsibleTrigger className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors [&>svg]:transition-transform [&>svg]:-rotate-90 [&[data-open]>svg]:rotate-0">
+        <ChevronDown className="h-4 w-4" />
         Props
         <span className="text-xs text-muted-foreground/60">({props.length})</span>
       </CollapsibleTrigger>
