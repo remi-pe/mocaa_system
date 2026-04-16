@@ -23,7 +23,7 @@ export function SectionWrapper({
           <LinkIcon className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-50" />
         </a>
         {description && (
-          <p className="mt-1.5 text-muted-foreground">{description}</p>
+          <p className="mt-0.5 text-muted-foreground">{description}</p>
         )}
       </div>
       {children}
