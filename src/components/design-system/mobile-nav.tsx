@@ -17,7 +17,7 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 flex items-center gap-3 border-b bg-background/95 px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-background/60 lg:hidden">
+    <div className="sticky top-0 z-50 flex items-center gap-3 border-b bg-background/95 px-4 py-3 backdrop-blur font-[family-name:var(--font-geist)] supports-[backdrop-filter]:bg-background/60 lg:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger render={<Button variant="ghost" size="icon" className="shrink-0" />}>
             <Menu className="h-5 w-5" />
