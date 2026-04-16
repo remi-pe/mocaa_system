@@ -128,4 +128,24 @@
     @apply font-sans;
     scroll-behavior: smooth;
   }
+  button,
+  [role="button"],
+  [role="checkbox"],
+  [role="switch"],
+  [role="tab"],
+  [role="menuitem"],
+  [role="menuitemcheckbox"],
+  [role="menuitemradio"],
+  [role="option"],
+  [role="radio"],
+  [role="slider"],
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  a[href],
+  label[for],
+  summary,
+  select {
+    cursor: pointer;
+  }
 }
