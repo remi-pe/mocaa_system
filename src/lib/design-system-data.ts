@@ -106,13 +106,13 @@ export const COLOR_TOKENS: ColorToken[] = [
   { name: "Popover Foreground", variable: "popover-foreground", group: "Foregrounds" },
 
   // Brand
+  { name: "Highlight Lime", variable: "highlight-lime", group: "Brand" },
+  { name: "Highlight Red", variable: "highlight-red", group: "Brand" },
+  { name: "Highlight Purple", variable: "highlight-purple", group: "Brand" },
   { name: "Primary", variable: "primary", group: "Brand" },
   { name: "Primary Foreground", variable: "primary-foreground", group: "Brand" },
   { name: "Secondary", variable: "secondary", group: "Brand" },
   { name: "Secondary Foreground", variable: "secondary-foreground", group: "Brand" },
-  { name: "Highlight Lime", variable: "highlight-lime", group: "Brand" },
-  { name: "Highlight Red", variable: "highlight-red", group: "Brand" },
-  { name: "Highlight Purple", variable: "highlight-purple", group: "Brand" },
 
   // State
   { name: "Destructive", variable: "destructive", group: "State" },
