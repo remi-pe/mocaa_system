@@ -123,6 +123,11 @@ export const COLOR_TOKENS: ColorToken[] = [
   { name: "Input", variable: "input", group: "Borders & Input" },
   { name: "Ring", variable: "ring", group: "Borders & Input" },
 
+  // Highlights
+  { name: "Highlight Lime", variable: "highlight-lime", group: "Highlights" },
+  { name: "Highlight Red", variable: "highlight-red", group: "Highlights" },
+  { name: "Highlight Purple", variable: "highlight-purple", group: "Highlights" },
+
   // Charts
   { name: "Chart 1", variable: "chart-1", group: "Charts" },
   { name: "Chart 2", variable: "chart-2", group: "Charts" },
