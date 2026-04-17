@@ -6,6 +6,7 @@ export type SectionItem = {
 
 export const CATEGORIES = [
   "Foundations",
+  "Patterns",
   "Actions",
   "Forms",
   "Data Display",
@@ -26,6 +27,15 @@ export const SECTIONS: SectionItem[] = [
   { id: "shadows", label: "Shadows", category: "Foundations" },
   { id: "icons", label: "Icons", category: "Foundations" },
 
+  // Patterns
+  { id: "empty-state", label: "Empty State", category: "Patterns" },
+  { id: "page-header", label: "Page Header", category: "Patterns" },
+  { id: "stat-card", label: "Stat Card", category: "Patterns" },
+  { id: "kbd", label: "Kbd", category: "Patterns" },
+  { id: "copy-button", label: "Copy Button", category: "Patterns" },
+  { id: "spinner", label: "Spinner", category: "Patterns" },
+  { id: "status-dot", label: "Status Dot", category: "Patterns" },
+
   // Actions
   { id: "button", label: "Button", category: "Actions" },
   { id: "toggle", label: "Toggle", category: "Actions" },
@@ -45,6 +55,14 @@ export const SECTIONS: SectionItem[] = [
   { id: "input-otp", label: "Input OTP", category: "Forms" },
   { id: "calendar", label: "Calendar", category: "Forms" },
   { id: "date-picker", label: "Date Picker", category: "Forms" },
+  { id: "combobox", label: "Combobox", category: "Forms" },
+  { id: "multi-select", label: "Multi-Select", category: "Forms" },
+  { id: "tag-input", label: "Tag Input", category: "Forms" },
+  { id: "file-upload", label: "File Upload", category: "Forms" },
+  { id: "number-input", label: "Number Input", category: "Forms" },
+  { id: "password-strength", label: "Password Strength", category: "Forms" },
+  { id: "phone-input", label: "Phone Input", category: "Forms" },
+  { id: "rating", label: "Rating", category: "Forms" },
 
   // Data Display
   { id: "badge", label: "Badge", category: "Data Display" },
@@ -57,6 +75,15 @@ export const SECTIONS: SectionItem[] = [
   { id: "separator", label: "Separator", category: "Data Display" },
   { id: "skeleton", label: "Skeleton", category: "Data Display" },
   { id: "progress", label: "Progress", category: "Data Display" },
+  { id: "sparkline", label: "Sparkline", category: "Data Display" },
+  { id: "gauge", label: "Gauge", category: "Data Display" },
+  { id: "avatar-group", label: "Avatar Group", category: "Data Display" },
+  { id: "timeline", label: "Timeline", category: "Data Display" },
+  { id: "stepper", label: "Stepper", category: "Data Display" },
+  { id: "code-block", label: "Code Block", category: "Data Display" },
+  { id: "diff-viewer", label: "Diff Viewer", category: "Data Display" },
+  { id: "json-viewer", label: "JSON Viewer", category: "Data Display" },
+  { id: "log-viewer", label: "Log Viewer", category: "Data Display" },
 
   // Feedback
   { id: "alert", label: "Alert", category: "Feedback" },
