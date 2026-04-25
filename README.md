@@ -24,15 +24,23 @@ const nextConfig = {
 export default nextConfig;
 ```
 
-Wire up Tailwind v4 + design tokens in your consumer's `app/globals.css`:
+Wire up Tailwind v4 + design tokens in your consumer's `globals.css`. The `@source` path is **relative to the CSS file**, so it depends on your project layout:
 
 ```css
+/* src/app/globals.css (standard create-next-app with --src-dir) */
+@import "tailwindcss";
+@source "../../node_modules/mocaa-system/src";
+@import "mocaa-system/styles.css";
+```
+
+```css
+/* app/globals.css (no src/ directory) */
 @import "tailwindcss";
 @source "../node_modules/mocaa-system/src";
 @import "mocaa-system/styles.css";
 ```
 
-The `@source` line lets Tailwind scan the package's source for class usage. The `styles.css` import brings in CSS variables, base styles, and dark-mode tokens.
+The `@source` line lets Tailwind v4 scan the package's source for class usage. The `styles.css` import brings in CSS variables, base styles, and dark-mode tokens.
 
 Then use any component:
 
