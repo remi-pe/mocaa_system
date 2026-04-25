@@ -5,7 +5,7 @@ export type SectionItem = {
 };
 
 export const CATEGORIES = [
-  "Foundations",
+  "Primitives",
   "Patterns",
   "Actions",
   "Forms",
@@ -19,13 +19,13 @@ export const CATEGORIES = [
 export type Category = (typeof CATEGORIES)[number];
 
 export const SECTIONS: SectionItem[] = [
-  // Foundations
-  { id: "colors", label: "Colors", category: "Foundations" },
-  { id: "typography", label: "Typography", category: "Foundations" },
-  { id: "spacing", label: "Spacing", category: "Foundations" },
-  { id: "borders-radius", label: "Borders & Radius", category: "Foundations" },
-  { id: "shadows", label: "Shadows", category: "Foundations" },
-  { id: "icons", label: "Icons", category: "Foundations" },
+  // Primitives
+  { id: "colors", label: "Colors", category: "Primitives" },
+  { id: "typography", label: "Typography", category: "Primitives" },
+  { id: "spacing", label: "Spacing", category: "Primitives" },
+  { id: "borders-radius", label: "Borders & Radius", category: "Primitives" },
+  { id: "shadows", label: "Shadows", category: "Primitives" },
+  { id: "icons", label: "Icons", category: "Primitives" },
 
   // Patterns
   { id: "empty-state", label: "Empty State", category: "Patterns" },
@@ -35,6 +35,7 @@ export const SECTIONS: SectionItem[] = [
   { id: "copy-button", label: "Copy Button", category: "Patterns" },
   { id: "spinner", label: "Spinner", category: "Patterns" },
   { id: "status-dot", label: "Status Dot", category: "Patterns" },
+  { id: "progress-indicator", label: "Progress Indicator", category: "Patterns" },
 
   // Actions
   { id: "button", label: "Button", category: "Actions" },
@@ -63,6 +64,13 @@ export const SECTIONS: SectionItem[] = [
   { id: "password-strength", label: "Password Strength", category: "Forms" },
   { id: "phone-input", label: "Phone Input", category: "Forms" },
   { id: "rating", label: "Rating", category: "Forms" },
+  { id: "likert-scale", label: "Likert Scale", category: "Forms" },
+  { id: "nps-score", label: "NPS Score", category: "Forms" },
+  { id: "choice-card", label: "Choice Card", category: "Forms" },
+  { id: "ranking-input", label: "Ranking Input", category: "Forms" },
+  { id: "matrix-question", label: "Matrix Question", category: "Forms" },
+  { id: "auto-expanding-textarea", label: "Auto-Expanding Textarea", category: "Forms" },
+  { id: "segmented-control", label: "Segmented Control", category: "Forms" },
 
   // Data Display
   { id: "badge", label: "Badge", category: "Data Display" },

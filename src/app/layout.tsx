@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "mocaa_ui_system",
+  title: "mocaa_system",
   description: "A comprehensive design system built on shadcn/ui",
 };
 

@@ -18,6 +18,7 @@ import { KbdSection } from "@/components/design-system/patterns/kbd-section";
 import { CopyButtonSection } from "@/components/design-system/patterns/copy-button-section";
 import { SpinnerSection } from "@/components/design-system/patterns/spinner-section";
 import { StatusDotSection } from "@/components/design-system/patterns/status-dot-section";
+import { ProgressIndicatorSection } from "@/components/design-system/patterns/progress-indicator-section";
 
 // Actions
 import { ButtonSection } from "@/components/design-system/actions/button-section";
@@ -46,6 +47,13 @@ import { NumberInputSection } from "@/components/design-system/forms/number-inpu
 import { PasswordStrengthSection } from "@/components/design-system/forms/password-strength-section";
 import { PhoneInputSection } from "@/components/design-system/forms/phone-input-section";
 import { RatingSection } from "@/components/design-system/forms/rating-section";
+import { LikertScaleSection } from "@/components/design-system/forms/likert-scale-section";
+import { NPSScoreSection } from "@/components/design-system/forms/nps-score-section";
+import { ChoiceCardSection } from "@/components/design-system/forms/choice-card-section";
+import { RankingInputSection } from "@/components/design-system/forms/ranking-input-section";
+import { MatrixQuestionSection } from "@/components/design-system/forms/matrix-question-section";
+import { AutoExpandingTextareaSection } from "@/components/design-system/forms/auto-expanding-textarea-section";
+import { SegmentedControlSection } from "@/components/design-system/forms/segmented-control-section";
 
 // Data Display
 import { BadgeSection } from "@/components/design-system/data-display/badge-section";
@@ -105,7 +113,7 @@ export default function DesignSystemPage() {
         {/* Desktop Sidebar */}
         <aside className="hidden lg:block w-64 shrink-0 border-r">
           <div className="sticky top-0 h-screen overflow-y-auto p-6">
-            <h1 className="mb-4 text-xl font-bold">mocaa_ui_system</h1>
+            <h1 className="mb-4 text-xl font-bold">mocaa_system</h1>
             <div className="mb-6">
               <ThemeToggle />
             </div>
@@ -118,7 +126,7 @@ export default function DesignSystemPage() {
           <div className="mx-auto max-w-4xl">
             <div className="mb-8">
               <h1 className="hidden text-4xl font-extrabold tracking-tight lg:block">
-                mocaa_ui_system
+                mocaa_system
               </h1>
               <p className="mt-2 text-lg text-muted-foreground">
                 One system, one source of truth. Built to ship Mocaa Studio
@@ -142,6 +150,7 @@ export default function DesignSystemPage() {
             <CopyButtonSection />
             <SpinnerSection />
             <StatusDotSection />
+            <ProgressIndicatorSection />
 
             {/* Actions */}
             <ButtonSection />
@@ -170,6 +179,13 @@ export default function DesignSystemPage() {
             <PasswordStrengthSection />
             <PhoneInputSection />
             <RatingSection />
+            <LikertScaleSection />
+            <NPSScoreSection />
+            <ChoiceCardSection />
+            <RankingInputSection />
+            <MatrixQuestionSection />
+            <AutoExpandingTextareaSection />
+            <SegmentedControlSection />
 
             {/* Data Display */}
             <BadgeSection />
