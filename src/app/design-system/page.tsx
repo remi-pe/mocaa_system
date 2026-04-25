@@ -121,9 +121,8 @@ export default function DesignSystemPage() {
                 mocaa_ui_system
               </h1>
               <p className="mt-2 text-lg text-muted-foreground">
-                A comprehensive design system built on shadcn/ui. Browse
-                foundations, tokens, and components — your single source of
-                truth.
+                One system, one source of truth. Built to ship Mocaa Studio
+                projects faster.
               </p>
             </div>
 
