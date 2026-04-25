@@ -1,6 +1,6 @@
 {
   "name": "mocaa-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Mocaa Studio design system — Tailwind v4 + shadcn primitives and patterns.",
   "repository": {

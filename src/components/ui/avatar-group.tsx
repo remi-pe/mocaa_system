@@ -2,8 +2,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar";
-import { cn } from "@/lib/utils";
+} from "./avatar";
+import { cn } from "../../lib/utils";
 
 export interface AvatarGroupAvatar {
   src?: string;

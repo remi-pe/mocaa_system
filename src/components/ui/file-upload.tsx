@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Upload, X, File as FileIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 export interface FileUploadProps {
   onFilesSelected?: (files: File[]) => void;

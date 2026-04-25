@@ -1,7 +1,7 @@
 "use client";
 
 import { LineChart, Line, ResponsiveContainer } from "recharts";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 interface SparklineProps {
   data: number[];

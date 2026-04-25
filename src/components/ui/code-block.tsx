@@ -1,8 +1,8 @@
 "use client";
 
-import { CopyButton } from "@/components/ui/copy-button";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
+import { CopyButton } from "./copy-button";
+import { Badge } from "./badge";
+import { cn } from "../../lib/utils";
 
 interface CodeBlockProps {
   code: string;

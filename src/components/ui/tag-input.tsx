@@ -3,8 +3,8 @@
 import * as React from "react";
 import { X } from "lucide-react";
 
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { cn } from "../../lib/utils";
+import { Badge } from "./badge";
 
 export interface TagInputProps {
   value?: string[];

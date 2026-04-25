@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { ThemeSwitch } from "@/components/ui/theme-switch";
+import { ThemeSwitch } from "./ui/theme-switch";
 
 export function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
