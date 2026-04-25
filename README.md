@@ -1,40 +1,80 @@
 # mocaa_system
 
-Live at [mocaa-system.vercel.app](https://mocaa-system.vercel.app).
+The Mocaa Studio design system — built on Tailwind v4 + shadcn primitives. Live showcase at [mocaa-system.vercel.app](https://mocaa-system.vercel.app).
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repo is two things at once:
+1. A **Next.js showcase site** — what you see at the URL above.
+2. An **installable package** — consumed by other Mocaa projects via GitHub install. See [Using as a package](#using-as-a-package) below.
 
-## Getting Started
+## Using as a package
 
-First, run the development server:
+Install in another project, pinning to a tag for reproducibility:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install github:remi-pe/mocaa_system#v0.1.0
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tell Next.js to transpile the package:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```ts
+// next.config.ts
+const nextConfig = {
+  transpilePackages: ["mocaa-system"],
+};
+export default nextConfig;
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Wire up Tailwind v4 + design tokens in your consumer's `app/globals.css`:
 
-## Learn More
+```css
+@import "tailwindcss";
+@source "../node_modules/mocaa-system/src";
+@import "mocaa-system/styles.css";
+```
 
-To learn more about Next.js, take a look at the following resources:
+The `@source` line lets Tailwind scan the package's source for class usage. The `styles.css` import brings in CSS variables, base styles, and dark-mode tokens.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then use any component:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```tsx
+import { Button } from "mocaa-system/button";
+import { Card, CardContent } from "mocaa-system/card";
+import { EmptyState } from "mocaa-system/empty-state";
+import { cn } from "mocaa-system/utils";
+import { ThemeProvider } from "mocaa-system/theme-provider";
+```
 
-## Deploy on Vercel
+Each `components/ui/*.tsx` file is exposed at `mocaa-system/<filename-without-ext>`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Updating
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+When you publish a new tag here:
+
+```bash
+npm install github:remi-pe/mocaa_system#v0.2.0
+```
+
+### Required peer setup in the consumer
+
+- Next.js 16+
+- React 19+
+- Tailwind v4 (CSS-first config, no `tailwind.config.js` needed)
+
+## Local development
+
+Run the showcase site locally:
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000/design-system](http://localhost:3000/design-system) to browse the system.
+
+The showcase pages live in `src/app/`. Components and tokens (the package surface) live in `src/components/ui/`, `src/lib/utils.ts`, `src/hooks/`, and `src/app/globals.css`.
+
+## Releasing a new version
+
+1. Bump `version` in `package.json`.
+2. Commit on `main`.
+3. Tag: `git tag v0.X.Y && git push --tags`.
+4. In consumers: `npm install github:remi-pe/mocaa_system#v0.X.Y`.

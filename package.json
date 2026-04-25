@@ -1,7 +1,29 @@
 {
-  "name": "mocaa_system",
+  "name": "mocaa-system",
   "version": "0.1.0",
   "private": true,
+  "description": "Mocaa Studio design system — Tailwind v4 + shadcn primitives and patterns.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remi-pe/mocaa_system.git"
+  },
+  "exports": {
+    "./styles.css": "./src/app/globals.css",
+    "./utils": "./src/lib/utils.ts",
+    "./hooks/use-mobile": "./src/hooks/use-mobile.ts",
+    "./theme-provider": "./src/components/theme-provider.tsx",
+    "./theme-toggle": "./src/components/theme-toggle.tsx",
+    "./*": "./src/components/ui/*.tsx"
+  },
+  "files": [
+    "src/components/ui",
+    "src/components/theme-provider.tsx",
+    "src/components/theme-toggle.tsx",
+    "src/lib/utils.ts",
+    "src/hooks/use-mobile.ts",
+    "src/app/globals.css",
+    "README.md"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
