@@ -29,15 +29,15 @@ const FONT_WEIGHTS = [
 ] as const;
 
 const SIZE_SCALE = [
-  { className: "text-xs", size: "0.75rem / 12px" },
-  { className: "text-sm", size: "0.875rem / 14px" },
-  { className: "text-base", size: "1rem / 16px" },
-  { className: "text-lg", size: "1.125rem / 18px" },
-  { className: "text-xl", size: "1.25rem / 20px" },
-  { className: "text-2xl", size: "1.5rem / 24px" },
-  { className: "text-3xl", size: "1.875rem / 30px" },
-  { className: "text-4xl", size: "2.25rem / 36px" },
-  { className: "text-5xl", size: "3rem / 48px" },
+  { className: "text-xs",   size: "0.75rem / 12px",  lineHeight: "1rem / 16px",    letterSpacing: "Normal (0)" },
+  { className: "text-sm",   size: "0.875rem / 14px", lineHeight: "1.25rem / 20px", letterSpacing: "Normal (0)" },
+  { className: "text-base", size: "1rem / 16px",     lineHeight: "1.5rem / 24px",  letterSpacing: "Normal (0)" },
+  { className: "text-lg",   size: "1.125rem / 18px", lineHeight: "1.75rem / 28px", letterSpacing: "Normal (0)" },
+  { className: "text-xl",   size: "1.25rem / 20px",  lineHeight: "1.75rem / 28px", letterSpacing: "Normal (0)" },
+  { className: "text-2xl",  size: "1.5rem / 24px",   lineHeight: "2rem / 32px",    letterSpacing: "Normal (0)" },
+  { className: "text-3xl",  size: "1.875rem / 30px", lineHeight: "2.25rem / 36px", letterSpacing: "Normal (0)" },
+  { className: "text-4xl",  size: "2.25rem / 36px",  lineHeight: "2.5rem / 40px",  letterSpacing: "Normal (0)" },
+  { className: "text-5xl",  size: "3rem / 48px",     lineHeight: "1 (48px)",       letterSpacing: "Normal (0)" },
 ] as const;
 
 export function TypographySection() {
@@ -94,6 +94,8 @@ export function TypographySection() {
                 <tr className="border-b">
                   <th className="pb-2 pr-6 font-medium">Class</th>
                   <th className="pb-2 pr-6 font-medium">Size</th>
+                  <th className="pb-2 pr-6 font-medium">Line height</th>
+                  <th className="pb-2 pr-6 font-medium">Letter spacing</th>
                   <th className="pb-2 font-medium">Specimen</th>
                 </tr>
               </thead>
@@ -105,6 +107,12 @@ export function TypographySection() {
                     </td>
                     <td className="py-2 pr-6 font-mono text-xs text-muted-foreground">
                       {row.size}
+                    </td>
+                    <td className="py-2 pr-6 font-mono text-xs text-muted-foreground">
+                      {row.lineHeight}
+                    </td>
+                    <td className="py-2 pr-6 font-mono text-xs text-muted-foreground">
+                      {row.letterSpacing}
                     </td>
                     <td className="py-2">
                       <span className={row.className}>Aa</span>
