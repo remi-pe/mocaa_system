@@ -143,6 +143,12 @@ export default function DesignSystemPage() {
             <BordersRadiusSection />
             <ShadowsSection />
 
+            {/* Actions */}
+            <ButtonSection />
+            <ToggleSection />
+            <ToggleGroupSection />
+            <ThemeSwitchSection />
+
             {/* Patterns */}
             <EmptyStateSection />
             <PageHeaderSection />
@@ -152,12 +158,6 @@ export default function DesignSystemPage() {
             <SpinnerSection />
             <StatusDotSection />
             <ProgressIndicatorSection />
-
-            {/* Actions */}
-            <ButtonSection />
-            <ToggleSection />
-            <ToggleGroupSection />
-            <ThemeSwitchSection />
 
             {/* Forms */}
             <InputSection />

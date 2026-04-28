@@ -6,8 +6,8 @@ export type SectionItem = {
 
 export const CATEGORIES = [
   "Primitives",
-  "Patterns",
   "Actions",
+  "Patterns",
   "Forms",
   "Data Display",
   "Feedback",
@@ -27,6 +27,12 @@ export const SECTIONS: SectionItem[] = [
   { id: "borders-radius", label: "Borders & Radius", category: "Primitives" },
   { id: "shadows", label: "Shadows", category: "Primitives" },
 
+  // Actions
+  { id: "button", label: "Button", category: "Actions" },
+  { id: "toggle", label: "Toggle", category: "Actions" },
+  { id: "toggle-group", label: "Toggle Group", category: "Actions" },
+  { id: "theme-switch", label: "Theme Switch", category: "Actions" },
+
   // Patterns
   { id: "empty-state", label: "Empty State", category: "Patterns" },
   { id: "page-header", label: "Page Header", category: "Patterns" },
@@ -36,12 +42,6 @@ export const SECTIONS: SectionItem[] = [
   { id: "spinner", label: "Spinner", category: "Patterns" },
   { id: "status-dot", label: "Status Dot", category: "Patterns" },
   { id: "progress-indicator", label: "Progress Indicator", category: "Patterns" },
-
-  // Actions
-  { id: "button", label: "Button", category: "Actions" },
-  { id: "toggle", label: "Toggle", category: "Actions" },
-  { id: "toggle-group", label: "Toggle Group", category: "Actions" },
-  { id: "theme-switch", label: "Theme Switch", category: "Actions" },
 
   // Forms
   { id: "input", label: "Input", category: "Forms" },
