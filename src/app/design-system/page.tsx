@@ -103,8 +103,11 @@ import { HoverCardSection } from "@/components/design-system/overlay/hover-card-
 import { PopoverSection } from "@/components/design-system/overlay/popover-section";
 import { TooltipSection } from "@/components/design-system/overlay/tooltip-section";
 
+import { TypefaceProvider } from "@/components/design-system/typeface-context";
+
 export default function DesignSystemPage() {
   return (
+    <TypefaceProvider>
     <div className="flex min-h-screen flex-col">
       <MobileNav />
       <div className="flex flex-1">
@@ -236,5 +239,6 @@ export default function DesignSystemPage() {
         </main>
       </div>
     </div>
+    </TypefaceProvider>
   );
 }
