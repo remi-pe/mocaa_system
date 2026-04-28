@@ -12,7 +12,7 @@ export function BordersRadiusSection() {
         {RADIUS_TOKENS.map((token) => (
           <div key={token.className} className="flex flex-col items-center gap-2">
             <div
-              className={`flex h-20 w-20 items-center justify-center border-2 border-primary bg-muted ${token.className}`}
+              className={`flex h-20 w-20 items-center justify-center border border-primary bg-muted ${token.className}`}
             />
             <div className="text-center">
               <p className="font-mono text-xs font-medium">{token.className}</p>

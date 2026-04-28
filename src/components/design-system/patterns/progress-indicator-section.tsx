@@ -23,13 +23,13 @@ export function ProgressIndicatorSection() {
           <div className="mt-4 flex gap-2">
             <Button
               variant="outline"
-              size="sm"
+              size="xs"
               onClick={() => setStep((s) => Math.max(1, s - 1))}
             >
               Back
             </Button>
             <Button
-              size="sm"
+              size="xs"
               onClick={() => setStep((s) => Math.min(total, s + 1))}
             >
               Next

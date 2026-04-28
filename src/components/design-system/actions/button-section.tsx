@@ -26,9 +26,10 @@ export function ButtonSection() {
 
       <ComponentPreview title="Sizes">
         <div className="flex flex-wrap items-center gap-3">
-          <Button size="sm">Small</Button>
+          <Button size="xs">Extra Small</Button>
           <Button size="default">Default</Button>
           <Button size="lg">Large</Button>
+          <Button size="xl">Extra Large</Button>
           <Button size="icon">
             <Mail />
           </Button>
@@ -73,7 +74,7 @@ export function ButtonSection() {
           },
           {
             name: "size",
-            type: '"default" | "sm" | "lg" | "icon"',
+            type: '"default" | "xs" | "lg" | "xl" | "icon"',
             defaultValue: '"default"',
             description: "The size of the button.",
           },

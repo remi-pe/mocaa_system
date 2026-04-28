@@ -32,7 +32,7 @@ export function CopyButton({
     return (
       <Button
         variant="outline"
-        size="sm"
+        size="xs"
         onClick={handleCopy}
         className={cn(className)}
       >
