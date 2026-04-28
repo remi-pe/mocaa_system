@@ -17,7 +17,7 @@ export function BordersRadiusSection() {
             <div className="text-center">
               <p className="font-mono text-xs font-medium">{token.className}</p>
               <p className="font-mono text-xs text-muted-foreground">
-                {token.cssValue}
+                {token.px}
               </p>
             </div>
           </div>

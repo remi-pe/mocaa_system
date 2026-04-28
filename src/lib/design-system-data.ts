@@ -198,17 +198,17 @@ export const SPACING_SCALE: SpacingValue[] = [
 export type RadiusToken = {
   name: string;
   className: string;
-  cssValue: string;
+  px: string;
 };
 
 export const RADIUS_TOKENS: RadiusToken[] = [
-  { name: "None", className: "rounded-none", cssValue: "0" },
-  { name: "SM", className: "rounded-sm", cssValue: "calc(var(--radius) * 0.6)" },
-  { name: "MD", className: "rounded-md", cssValue: "calc(var(--radius) * 0.8)" },
-  { name: "LG (Base)", className: "rounded-lg", cssValue: "var(--radius)" },
-  { name: "XL", className: "rounded-xl", cssValue: "calc(var(--radius) * 1.4)" },
-  { name: "2XL", className: "rounded-2xl", cssValue: "calc(var(--radius) * 1.8)" },
-  { name: "Full", className: "rounded-full", cssValue: "9999px" },
+  { name: "None", className: "rounded-none", px: "0px" },
+  { name: "SM", className: "rounded-sm", px: "6px" },
+  { name: "MD", className: "rounded-md", px: "8px" },
+  { name: "LG (Base)", className: "rounded-lg", px: "10px" },
+  { name: "XL", className: "rounded-xl", px: "14px" },
+  { name: "2XL", className: "rounded-2xl", px: "18px" },
+  { name: "Full", className: "rounded-full", px: "Fully rounded" },
 ];
 
 export type ShadowToken = {
