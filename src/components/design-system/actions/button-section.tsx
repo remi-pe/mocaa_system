@@ -16,9 +16,9 @@ export function ButtonSection() {
       <ComponentPreview title="Variants">
         <div className="flex flex-wrap items-center gap-3">
           <Button variant="default">Default</Button>
-          <Button variant="destructive">Destructive</Button>
-          <Button variant="outline">Outline</Button>
           <Button variant="secondary">Secondary</Button>
+          <Button variant="outline">Outline</Button>
+          <Button variant="destructive">Destructive</Button>
           <Button variant="ghost">Ghost</Button>
           <Button variant="link">Link</Button>
         </div>
@@ -48,7 +48,7 @@ export function ButtonSection() {
       </ComponentPreview>
 
       <ComponentPreview title="Loading">
-        <Button disabled>
+        <Button aria-busy="true" aria-disabled="true" className="pointer-events-none">
           <Loader2 className="animate-spin" />
           Please wait
         </Button>
